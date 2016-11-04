@@ -24,16 +24,16 @@ public class CA2 {
             
         System.out.println("Please enter your username");
         username1= key.nextLine();
-        
+       
         System.out.println("Please enter your password");
         password1= key.nextLine();
         
         System.out.println("Please confirm your password");
         attempts=0
         while ( attempts!= 3)
-         if (input.nextLine().equals(password1)) {
-         System.out.println("Password accepted");
-        
+         if (input.nextLine().equals(password1) && (Username1.length()>6)) {
+         System.out.println("Password accepted"); 
+        }
         }
          else {
          System.out.println("Password or Username is incorrect");
@@ -70,16 +70,20 @@ public class CA2 {
  +                    break;
  +                case 2:
  +                    System.out.println("Option 2");
+                       System.out.println("Please")
  +                    break;
  +                case 3:
  +                    System.out.println("Option 3");
  +                    break;
+         
  +                case 4:
  +                    System.out.println("Option 4");
  +                    break;
+         
  +                case 5:
  +                    System.exit(0);
  +                    break;
+         
  +                default:
  +                    System.out.println("Invalid selection. Please re-enter");
  +                    break;
